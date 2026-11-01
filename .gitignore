@@ -1,0 +1,16 @@
+# File sistem operasi
+Thumbs.db
+.DS_Store
+Desktop.ini
+
+# Editor / IDE
+.vscode/
+.idea/
+
+# Dependensi lokal (tidak dipakai saat ini, hanya antisipasi)
+node_modules/
+npm-debug.log*
+
+# Hasil build (situs ini tidak punya build step, hanya antisipasi)
+dist/
+build/
