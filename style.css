@@ -10,6 +10,7 @@
   --clr-primary: #3b5b75;
   --clr-primary-strong: #2e4a60;
   --clr-accent: #4a7ba6;
+  --clr-on-primary: #ffffff;
   --clr-text: #1d2530;
   --clr-text-soft: #57606e;
   --clr-bg: #f6f7f8;
@@ -27,6 +28,7 @@
   --clr-primary: #7ba9cc;
   --clr-primary-strong: #a3c4de;
   --clr-accent: #8fb4d8;
+  --clr-on-primary: #10202c;
   --clr-text: #e8ecf1;
   --clr-text-soft: #aab4c0;
   --clr-bg: #131920;
@@ -193,7 +195,7 @@ a {
 
 .btn--primary {
   background: var(--clr-primary);
-  color: #fff;
+  color: var(--clr-on-primary);
 }
 
 .btn--primary:hover {
@@ -261,7 +263,7 @@ a {
 .filter__btn.is-active {
   background: var(--clr-primary);
   border-color: var(--clr-primary);
-  color: #fff;
+  color: var(--clr-on-primary);
 }
 
 .projects {
@@ -335,7 +337,7 @@ a {
 
 .lang-tags li {
   background: var(--clr-primary);
-  color: #fff;
+  color: var(--clr-on-primary);
   border-radius: 999px;
   padding: 0.3rem 1rem;
   font-size: 0.92rem;
