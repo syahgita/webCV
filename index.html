@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CV dan portofolio Dinar Syahgita Sherani — Mahasiswa Informatika Universitas Muhammadiyah Malang yang berminat di Rekayasa Perangkat Lunak.">
+  <title>Dinar Syahgita Sherani — CV &amp; Portofolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#konten">Lewati ke konten utama</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Navigasi utama">
+      <span class="nav__brand">Dinar Syahgita S.</span>
+      <ul class="nav__links">
+        <li><a href="#tentang">Tentang</a></li>
+        <li><a href="#proyek">Proyek</a></li>
+        <li><a href="#keahlian">Keahlian</a></li>
+        <li><a href="#riwayat">Riwayat</a></li>
+        <li><a href="#development">Development</a></li>
+        <li><a href="#kontak">Kontak</a></li>
+      </ul>
+      <button id="theme-toggle" class="theme-toggle" type="button" aria-pressed="false" title="Ganti tema gelap/terang">
+        <span id="theme-toggle-icon" aria-hidden="true">🌙</span>
+        <span class="visually-hidden">Ganti tema gelap/terang</span>
+      </button>
+    </nav>
+  </header>
+
+  <main id="konten">
+    <!-- ================= HERO ================= -->
+    <section id="hero" class="hero" aria-labelledby="judul-utama">
+      <!-- GANTI: foto profil asli. Placeholder saat ini berupa avatar SVG dengan inisial DS. -->
+      <img
+        class="hero__photo"
+        src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Crect width='200' height='200' rx='100' fill='%233B5B75'/%3E%3Ctext x='100' y='120' font-family='Arial' font-size='62' fill='%23ffffff' text-anchor='middle'%3EDS%3C/text%3E%3C/svg%3E"
+        alt="Foto profil Dinar Syahgita Sherani (masih placeholder, ganti dengan foto asli)"
+        width="140" height="140">
+      <h1 id="judul-utama">Dinar Syahgita Sherani</h1>
+      <p class="hero__role">Mahasiswa Informatika</p>
+      <p class="hero__meta">📍 Tlogomas, Kota Malang &nbsp;·&nbsp; ✉️ <a href="mailto:syahgitadinar@gmail.com">syahgitadinar@gmail.com</a></p>
+      <a class="btn btn--primary" href="#kontak">Hubungi saya</a>
+    </section>
+
+    <!-- ================= TENTANG ================= -->
+    <section id="tentang" class="section" aria-labelledby="judul-tentang">
+      <h2 id="judul-tentang">Tentang Saya</h2>
+      <article class="about">
+        <p>
+          Mahasiswa Informatika semester 5 Universitas Muhammadiyah Malang yang berminat di
+          Rekayasa Perangkat Lunak. Sedang mendalami pengembangan aplikasi desktop dan mobile,
+          serta bersemangat belajar hal baru dan bekerja dalam tim.
+        </p>
+      </article>
+    </section>
+
+    <!-- ================= PROYEK ================= -->
+    <section id="proyek" class="section" aria-labelledby="judul-proyek">
+      <h2 id="judul-proyek">Proyek</h2>
+      <div class="filter" role="group" aria-label="Filter proyek per kategori">
+        <button type="button" class="filter__btn is-active" data-filter="semua" aria-pressed="true">Semua</button>
+        <button type="button" class="filter__btn" data-filter="web" aria-pressed="false">Web</button>
+        <button type="button" class="filter__btn" data-filter="mobile" aria-pressed="false">Mobile</button>
+        <button type="button" class="filter__btn" data-filter="desktop" aria-pressed="false">Desktop</button>
+      </div>
+
+      <div class="projects grid" id="projects">
+        <!-- GANTI: href di tiap proyek masih placeholder -->
+
+        <article class="project-card" data-kategori="desktop">
+          <h3>MathAI</h3>
+          <p class="project-card__stack">Java Swing</p>
+          <p>Tutor matematika berbasis aturan yang dibangun dengan Java Swing.</p>
+          <!-- TODO: ganti link dengan repo/asset asli -->
+          <a class="project-card__link" href="https://github.com/syahgita/GANTI-LINK-PROYEK">Lihat proyek →</a>
+        </article>
+
+        <article class="project-card" data-kategori="mobile">
+          <h3>LaporCepat</h3>
+          <p class="project-card__stack">React Native / Expo</p>
+          <p>Proyek kelompok: aplikasi pelaporan kerusakan fasilitas umum dengan React Native (Expo).</p>
+          <!-- TODO: ganti link dengan repo/asset asli -->
+          <a class="project-card__link" href="https://github.com/syahgita/GANTI-LINK-PROYEK">Lihat proyek →</a>
+        </article>
+
+        <article class="project-card" data-kategori="web">
+          <h3>FlipPlay / The Vibe Grid</h3>
+          <p class="project-card__stack">HTML, Tailwind, Jikan API</p>
+          <p>Proyek web yang memanfaatkan Jikan API dengan HTML dan Tailwind.</p>
+          <!-- TODO: ganti link dengan repo/asset asli -->
+          <a class="project-card__link" href="https://github.com/syahgita/GANTI-LINK-PROYEK">Lihat proyek →</a>
+        </article>
+
+        <article class="project-card" data-kategori="web">
+          <h3>Sistem Perpustakaan</h3>
+          <p class="project-card__stack">PHP OOP</p>
+          <p>Sistem perpustakaan yang dibangun dengan pemrograman berorientasi objek di PHP.</p>
+          <!-- TODO: ganti link dengan repo/asset asli -->
+          <a class="project-card__link" href="https://github.com/syahgita/GANTI-LINK-PROYEK">Lihat proyek →</a>
+        </article>
+
+        <article class="project-card" data-kategori="desktop">
+          <h3>Refactor Fungsional Flappy Bird</h3>
+          <p class="project-card__stack">Python</p>
+          <p>Refactor game Flappy Bird menggunakan paradigma fungsional di Python.</p>
+          <!-- TODO: ganti link dengan repo/asset asli -->
+          <a class="project-card__link" href="https://github.com/syahgita/GANTI-LINK-PROYEK">Lihat proyek →</a>
+        </article>
+
+        <article class="project-card" data-kategori="web">
+          <h3>MountainGo Bromo</h3>
+          <p class="project-card__stack">Google Apps Script</p>
+          <p>Proyek web berbasis Google Apps Script.</p>
+          <!-- TODO: ganti link dengan repo/asset asli -->
+          <a class="project-card__link" href="https://github.com/syahgita/GANTI-LINK-PROYEK">Lihat proyek →</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- ================= KEAHLIAN ================= -->
+    <section id="keahlian" class="section" aria-labelledby="judul-keahlian">
+      <h2 id="judul-keahlian">Keahlian</h2>
+
+      <div class="skills grid">
+        <div class="skills__hard">
+          <h3>Hard Skill</h3>
+          <!-- Persentase bersifat perkiraan dan jujur sesuai tingkat dasar (maks. 75%). -->
+          <div class="skill-bar" aria-label="HTML dan CSS tingkat dasar, perkiraan 70 persen">
+            <div class="skill-bar__head"><span>HTML &amp; CSS</span><span class="skill-bar__value">70%</span></div>
+            <div class="skill-bar__track"><div class="skill-bar__fill" data-width="70"></div></div>
+          </div>
+          <div class="skill-bar" aria-label="Java tingkat dasar, perkiraan 65 persen">
+            <div class="skill-bar__head"><span>Java</span><span class="skill-bar__value">65%</span></div>
+            <div class="skill-bar__track"><div class="skill-bar__fill" data-width="65"></div></div>
+          </div>
+          <div class="skill-bar" aria-label="Python tingkat dasar, perkiraan 60 persen">
+            <div class="skill-bar__head"><span>Python</span><span class="skill-bar__value">60%</span></div>
+            <div class="skill-bar__track"><div class="skill-bar__fill" data-width="60"></div></div>
+          </div>
+          <div class="skill-bar" aria-label="PHP tingkat dasar, perkiraan 55 persen">
+            <div class="skill-bar__head"><span>PHP</span><span class="skill-bar__value">55%</span></div>
+            <div class="skill-bar__track"><div class="skill-bar__fill" data-width="55"></div></div>
+          </div>
+          <div class="skill-bar" aria-label="OOP tingkat dasar, perkiraan 60 persen">
+            <div class="skill-bar__head"><span>OOP</span><span class="skill-bar__value">60%</span></div>
+            <div class="skill-bar__track"><div class="skill-bar__fill" data-width="60"></div></div>
+          </div>
+          <div class="skill-bar" aria-label="Pengembangan aplikasi mobile dengan React Native tingkat dasar, perkiraan 55 persen">
+            <div class="skill-bar__head"><span>React Native (dasar)</span><span class="skill-bar__value">55%</span></div>
+            <div class="skill-bar__track"><div class="skill-bar__fill" data-width="55"></div></div>
+          </div>
+
+          <h3>Soft Skill</h3>
+          <ul class="chips">
+            <li>Pemecahan masalah</li>
+            <li>Kerja sama tim</li>
+            <li>Komunikasi</li>
+            <li>Public speaking</li>
+          </ul>
+        </div>
+
+        <div class="skills__code">
+          <h3>Bahasa Pemrograman</h3>
+          <ul class="lang-tags">
+            <li><strong>Java</strong></li>
+            <li><strong>PHP</strong></li>
+            <li><strong>Python</strong></li>
+          </ul>
+
+          <h3>Contoh Kode Java</h3>
+          <pre><code>public class HaloDunia &#123;
+    public static void main(String&#91;&#93; args) &#123;
+        String nama = "Dinar";
+        System.out.println("Halo, " + nama + "!");
+    &#125;
+&#125;</code></pre>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= RIWAYAT ================= -->
+    <section id="riwayat" class="section" aria-labelledby="judul-riwayat">
+      <h2 id="judul-riwayat">Riwayat</h2>
+
+      <article aria-labelledby="judul-pendidikan" tabindex="0" class="timeline">
+        <h3 id="judul-pendidikan">Pendidikan</h3>
+        <ul class="timeline__list">
+          <li>
+            <h4>S1 Informatika — Universitas Muhammadiyah Malang</h4>
+            <p class="timeline__period">2024 — sekarang (semester 5)</p>
+          </li>
+          <li>
+            <h4>SMAN 1 Gondang Tulungagung</h4>
+            <p class="timeline__period">2021 — 2024 · Jurusan IPA · Anggota MPK</p>
+          </li>
+        </ul>
+      </article>
+
+      <article aria-labelledby="judul-pengalaman" tabindex="0" class="timeline">
+        <h3 id="judul-pengalaman">Pengalaman Kerja</h3>
+        <ul class="timeline__list">
+          <li>
+            <h4>Driver ShopeeFood (Mitra Pengantaran) — Shopee Indonesia</h4>
+            <p class="timeline__period">September 2026 — sekarang</p>
+            <ul>
+              <li>Mengantarkan pesanan makanan kepada pelanggan secara tepat waktu dan dalam kondisi baik.</li>
+              <li>Berkomunikasi dengan pelanggan dan merchant untuk memastikan pesanan sesuai.</li>
+              <li>Mengatur waktu secara mandiri di sela jadwal perkuliahan.</li>
+            </ul>
+          </li>
+        </ul>
+      </article>
+
+      <article aria-labelledby="judul-sertifikat" tabindex="0" class="timeline">
+        <h3 id="judul-sertifikat">Sertifikat</h3>
+        <ul class="timeline__list">
+          <li>
+            <h4>Webinar Public Speaking “Master Your Voice” Batch 185</h4>
+            <p class="timeline__period">Motiva Center · 15 Juni 2026 · 4 JP</p>
+          </li>
+        </ul>
+      </article>
+    </section>
+
+    <!-- ================= DEVELOPMENT ================= -->
+    <section id="development" class="section" aria-labelledby="judul-development">
+      <h2 id="judul-development">Development</h2>
+      <article class="dev__article" tabindex="0">
+        <h3>Website ini dikembangkan dengan alur berikut</h3>
+        <ol>
+          <li>Repositori diinisialisasi dengan <code>git init</code> di folder proyek.</li>
+          <li>Perubahan dikembangkan per bertahap: struktur HTML, gaya CSS, interaksi JavaScript, lalu dokumentasi — setiap tahap menjadi satu <em>commit</em> terpisah dengan pesan berformat <code>feat:</code>, <code>style:</code>, atau <code>docs:</code>.</li>
+          <li>Setiap tahap diuji di server lokal (mis. <code>python -m http.server</code>) sebelum di-<em>commit</em>.</li>
+          <li>Repositori di-<em>push</em> ke GitHub (<code>git push -u origin main</code>).</li>
+          <li>Halaman diaktifkan lewat <strong>GitHub Pages</strong>: <em>Settings → Pages → Source: Deploy from a branch → Branch: main → Folder: / (root) → Save</em>.</li>
+        </ol>
+        <h3>Deploy</h3>
+        <p>
+          GitHub Pages otomatis mempublikasikan isi <code>main</code> sebagai situs statis.
+          Setiap perubahan baru tampil setelah di-<em>push</em> ke <code>main</code>, sehingga tidak perlu <em>build step</em>.
+        </p>
+      </article>
+    </section>
+
+    <!-- ================= KONTAK ================= -->
+    <section id="kontak" class="section" aria-labelledby="judul-kontak">
+      <h2 id="judul-kontak">Kontak</h2>
+      <form id="form-kontak" class="form" novalidate>
+        <div class="form__field">
+          <label for="nama">Nama</label>
+          <input type="text" id="nama" name="nama" placeholder="Nama Anda" aria-describedby="error-nama">
+          <p class="form__error" id="error-nama" aria-live="polite"></p>
+        </div>
+        <div class="form__field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="contoh@email.com" aria-describedby="error-email">
+          <p class="form__error" id="error-email" aria-live="polite"></p>
+        </div>
+        <div class="form__field">
+          <label for="pesan">Pesan</label>
+          <textarea id="pesan" name="pesan" rows="5" placeholder="Tulis pesan di sini" aria-describedby="error-pesan"></textarea>
+          <p class="form__error" id="error-pesan" aria-live="polite"></p>
+        </div>
+        <button type="submit" class="btn btn--primary">Kirim Pesan</button>
+        <p id="form-status" class="form__status" aria-live="polite"></p>
+      </form>
+      <p class="kontak__alt">
+        Anda juga bisa menulis langsung ke
+        <a href="mailto:syahgitadinar@gmail.com">syahgitadinar@gmail.com</a>.
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 Dinar Syahgita Sherani · Dibuat dengan HTML, CSS, dan JavaScript murni.</p>
+    <!-- TODO: ganti username GitHub jika diperlukan -->
+    <p><a href="https://github.com/syahgita" target="_blank" rel="noopener noreferrer">GitHub: syahgita</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
